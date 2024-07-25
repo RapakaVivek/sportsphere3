@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Animation</title>
+    
+      <style>
+    .image-container {
+        width: 600px; /* Set initial width */
+        height: 600px; /* Set initial height */
+        position: relative; /* Needed for absolute positioning */
+        overflow: hidden; /* Hide overflow to contain growing image */
+        border: solid;
+        margin-left: 00px;
+        margin-top: 00px;
+    }
+
+    .image-container img {
+       
+        display: block;
+        width: 0; /* Start with 0 width */
+        height: 0; /* Start with 0 height */
+        position: absolute;
+        top: 50%; /* Position the image in the vertical center */
+        left: 50%; /* Position the image in the horizontal center */
+        transform: translate(-50%, -50%); /* Center the image precisely */
+        transition: all 2s ease-out ; /* Smooth transition */
+        border-radius: 100%;
+    }
+
+    .image-container:hover img {
+        width:900px; /* Increase width on hover */
+        height: 900px; /* Increase height on hover */
+        border-radius: ;
+    }
+
+
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="images/cricket1.jpeg" alt="Your Image">
+    </div>
+</body>
+</html>
